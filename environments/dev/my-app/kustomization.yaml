@@ -1,9 +1,9 @@
 namespace: dev
 replicas:
-  - name: nginx
+  - name: k8s-demo-app
     count: 2
 images:
-  - name: nginx
-    newTag: "1.27.0"
+  - name: k8s-demo-app
+    newTag: "1.0"
 resources:
   - ../../../app-base
