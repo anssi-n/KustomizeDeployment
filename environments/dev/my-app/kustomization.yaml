@@ -1,6 +1,9 @@
 namespace: dev
+replicas:
+  - name: nginx
+    count: 2
 images:
   - name: nginx
-    newTag: latest
+    newTag: "1.27.0"
 resources:
   - ../../../app-base
